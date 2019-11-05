@@ -1,12 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <Ejercicio1a></Ejercicio1a>
+    <Ejercicio1b></Ejercicio1b>
+    <Ejercicio2a></Ejercicio2a>
+    <Ejercicio3c></Ejercicio3c>
   </div>
 </template>
+
+<script lang="ts">
+import {Component, Vue} from 'vue-property-decorator';
+import Ejercicio1aComponent from '@/components/Ejercicio1a.vue';
+import Ejercicio1bComponent from '@/components/Ejercicio1b/Ejercicio1b.vue';
+import Ejercicio2aComponent from '@/components/Ejercicio2a.vue';
+import Ejercicio3cComponent from '@/components/Ejercicio3c.vue';
+@Component({
+  components: {
+    Ejercicio1a: Ejercicio1aComponent,
+    Ejercicio1b: Ejercicio1bComponent,
+    Ejercicio2a: Ejercicio2aComponent,
+    Ejercicio3c: Ejercicio3cComponent,
+  }
+})
+export default class App extends Vue {}
+</script>
 
 <style lang="scss">
 #app {
