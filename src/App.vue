@@ -6,6 +6,7 @@
     <Ejercicio3c></Ejercicio3c>
     <Ejercicio3d></Ejercicio3d>
     <Ejercicio3e></Ejercicio3e>
+    <Ejercicio3f></Ejercicio3f>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Ejercicio2aComponent from '@/components/Ejercicio2a.vue';
 import Ejercicio3cComponent from '@/components/Ejercicio3c.vue';
 import Ejercicio3dComponent from '@/components/Ejercicio3d/Ejercicio3d.vue';
 import Ejercicio3eComponent from '@/components/Ejercicio3e/SelectedPlayer.vue';
+import Ejercicio3fComponent from '@/components/Ejercicio3f/FactorialParent.vue';
 @Component({
   components: {
     Ejercicio1a: Ejercicio1aComponent,
@@ -25,6 +27,7 @@ import Ejercicio3eComponent from '@/components/Ejercicio3e/SelectedPlayer.vue';
     Ejercicio3c: Ejercicio3cComponent,
     Ejercicio3d: Ejercicio3dComponent,
     Ejercicio3e: Ejercicio3eComponent,
+    Ejercicio3f: Ejercicio3fComponent,
   }
 })
 export default class App extends Vue {}
