@@ -8,6 +8,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Emit } from 'vue-property-decorator';
+import { EventBus } from '@/eventBus';
 
 @Component
 export default class PlayersComponent extends Vue {
@@ -19,9 +20,15 @@ export default class PlayersComponent extends Vue {
   };
   jugador = '';
 
-  @Emit('change')
+  // Forma directa
+  // @Emit('change')
+  // jugadorChange() {
+  //   return this.jugador;
+  // }
+
+  // Forma indirecta
   jugadorChange() {
-    return this.jugador;
+    EventBus.$emit('change', this.jugador);
   }
 }
 </script>
